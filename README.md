@@ -1,0 +1,14 @@
+# POC for calling .NET code from C++ using [Native AOT](https://github.com/dotnet/runtimelab/tree/feature/NativeAOT#readme) from .NET 5
+1. Ensure that https://github.com/dotnet/runtimelab/blob/feature/NativeAOT/docs/using-nativeaot/prerequisites.md are installed.
+2. Build *NativeHttpClient* project:
+   - static library: `dotnet publish -c Release -r win-x64 /p:NativeLib=Static /p:SelfContained=true`
+   - dynamic library: `dotnet publish -c Release -r win-x64 /p:NativeLib=Shared /p:SelfContained=true`
+3. Debug *NativeHttpClient.DynamicLink.App* in x64 architecture.
+   - You should be able to debug into `http_get` C# method.  
+4. Disabling a framework features (or enabling a minimal mode of the feature) can result in significant speed and size savings:
+   - To remove globalization specific code and data, uncomment a `<InvariantGlobalization>true</InvariantGlobalization>` in the *NativeHttpClient.csproj*. 
+   - Uncomment `<IlcDisableReflection>true</IlcDisableReflection>` in the *NativeHttpClient.csproj*.
+   - Uncomment `<IlcGenerateStackTraceData>false</IlcGenerateStackTraceData>` in the *NativeHttpClient.csproj*.
+   - Uncomment `<IlcOptimizationPreference>Speed</IlcOptimizationPreference>` in the *NativeHttpClient.csproj*.
+   - Uncomment `<IlcOptimizationPreference>Size</IlcOptimizationPreference>` in the *NativeHttpClient.csproj*.
+   - [More...](https://github.com/dotnet/runtimelab/blob/feature/NativeAOT/docs/using-nativeaot/optimizing.md)

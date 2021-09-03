@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NativeHttpClient", "NativeHttpClient\NativeHttpClient.csproj", "{602FA262-1FCF-4898-8B0D-1715EFD5C4DA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NativeHttpClient.StaticLink.App", "NativeHttpClient.StaticLink.App\NativeHttpClient.StaticLink.App.vcxproj", "{3E579236-87AF-4DBE-BD71-64F6BE613CDD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NativeHttpClient.DynamicLink.App", "NativeHttpClient.DynamicLink.App\NativeHttpClient.DynamicLink.App.vcxproj", "{077A6580-FBD6-484F-8ECE-6A749BB167D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4020E263-7FAA-42A8-9410-07D0F25584E4}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{602FA262-1FCF-4898-8B0D-1715EFD5C4DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{602FA262-1FCF-4898-8B0D-1715EFD5C4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{602FA262-1FCF-4898-8B0D-1715EFD5C4DA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{602FA262-1FCF-4898-8B0D-1715EFD5C4DA}.Debug|x64.Build.0 = Debug|Any CPU
+		{602FA262-1FCF-4898-8B0D-1715EFD5C4DA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{602FA262-1FCF-4898-8B0D-1715EFD5C4DA}.Debug|x86.Build.0 = Debug|Any CPU
+		{602FA262-1FCF-4898-8B0D-1715EFD5C4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{602FA262-1FCF-4898-8B0D-1715EFD5C4DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{602FA262-1FCF-4898-8B0D-1715EFD5C4DA}.Release|x64.ActiveCfg = Release|Any CPU
+		{602FA262-1FCF-4898-8B0D-1715EFD5C4DA}.Release|x64.Build.0 = Release|Any CPU
+		{602FA262-1FCF-4898-8B0D-1715EFD5C4DA}.Release|x86.ActiveCfg = Release|Any CPU
+		{602FA262-1FCF-4898-8B0D-1715EFD5C4DA}.Release|x86.Build.0 = Release|Any CPU
+		{3E579236-87AF-4DBE-BD71-64F6BE613CDD}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{3E579236-87AF-4DBE-BD71-64F6BE613CDD}.Debug|x64.ActiveCfg = Debug|x64
+		{3E579236-87AF-4DBE-BD71-64F6BE613CDD}.Debug|x64.Build.0 = Debug|x64
+		{3E579236-87AF-4DBE-BD71-64F6BE613CDD}.Debug|x86.ActiveCfg = Debug|Win32
+		{3E579236-87AF-4DBE-BD71-64F6BE613CDD}.Debug|x86.Build.0 = Debug|Win32
+		{3E579236-87AF-4DBE-BD71-64F6BE613CDD}.Release|Any CPU.ActiveCfg = Release|Win32
+		{3E579236-87AF-4DBE-BD71-64F6BE613CDD}.Release|x64.ActiveCfg = Release|x64
+		{3E579236-87AF-4DBE-BD71-64F6BE613CDD}.Release|x64.Build.0 = Release|x64
+		{3E579236-87AF-4DBE-BD71-64F6BE613CDD}.Release|x86.ActiveCfg = Release|Win32
+		{3E579236-87AF-4DBE-BD71-64F6BE613CDD}.Release|x86.Build.0 = Release|Win32
+		{077A6580-FBD6-484F-8ECE-6A749BB167D3}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{077A6580-FBD6-484F-8ECE-6A749BB167D3}.Debug|x64.ActiveCfg = Debug|x64
+		{077A6580-FBD6-484F-8ECE-6A749BB167D3}.Debug|x64.Build.0 = Debug|x64
+		{077A6580-FBD6-484F-8ECE-6A749BB167D3}.Debug|x86.ActiveCfg = Debug|Win32
+		{077A6580-FBD6-484F-8ECE-6A749BB167D3}.Debug|x86.Build.0 = Debug|Win32
+		{077A6580-FBD6-484F-8ECE-6A749BB167D3}.Release|Any CPU.ActiveCfg = Release|Win32
+		{077A6580-FBD6-484F-8ECE-6A749BB167D3}.Release|x64.ActiveCfg = Release|x64
+		{077A6580-FBD6-484F-8ECE-6A749BB167D3}.Release|x64.Build.0 = Release|x64
+		{077A6580-FBD6-484F-8ECE-6A749BB167D3}.Release|x86.ActiveCfg = Release|Win32
+		{077A6580-FBD6-484F-8ECE-6A749BB167D3}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {307BE4D6-78BE-441E-B337-E3DACEB328D8}
+	EndGlobalSection
+EndGlobal
